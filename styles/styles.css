@@ -1,0 +1,64 @@
+/* color */
+:root {
+  --color-bg-primary: #f5f5f5;
+  --color-bg-secondary: #f5f4fa;
+  --color-bg-black: #2f303a;
+  --color-white: #ffffff;
+  --color-accent: #2196f3;
+  --color-logo-header: #000000;
+  --color-logo-footer: var(--color-white);
+  --color-text: #757575;
+  --color-nav-and-title: #212121;
+
+  --color-contacts-footer: rgba(255, 255, 255, 0.6);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+}
+.header {
+  background-color: var(--color-white);
+}
+.header-navigation {
+  color: var(--color-nav-and-title);
+}
+
+.logo-header {
+  color: var(--color-logo-header);
+}
+
+.accent,
+.header-navigation :hover,
+.header-navigation :focus,
+.header-contacts :hover,
+.header-contacts :focus,
+.address :hover,
+.address :focus {
+  color: var(--color-accent);
+}
+.hero {
+  background: var(--color-bg-black);
+}
+.main-team {
+  background-color: var(--color-bg-secondary);
+}
+
+.footer {
+  background: var(--color-bg-black);
+}
+.logo-footer {
+  color: var(--color-logo-footer);
+}
+/* black-заголовки, шапка
+контент-контакты
+FFFFFF white-фон в хедере
+secondary
+primary
+лого в футері білий
+контакти в футері rgba(255, 255, 255, 0.6)  */ ;
