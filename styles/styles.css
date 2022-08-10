@@ -37,13 +37,7 @@ body {
 .header-contacts .link {
   color: var(--color-text);
 }
-.accent,
-.header :hover,
-.header :focus,
-.address :hover,
-.address :focus {
-  color: var(--color-accent);
-}
+
 .hero {
   background: var(--color-bg-black);
 }
@@ -76,4 +70,13 @@ body {
 }
 .footer-contacts {
   color: var(--color-contacts-footer);
+}
+.accent,
+.header-nav :hover,
+.header-nav :focus,
+.header-contacts :hover,
+.header-contacts :focus,
+.address :hover,
+.address :focus {
+  color: var(--color-accent);
 }
