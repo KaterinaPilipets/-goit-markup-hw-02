@@ -6,7 +6,7 @@
   --color-white: #ffffff;
   --color-accent: #2196f3;
   --color-logo-header: #000000;
-  --color-logo-footer: var(--color-white);
+  /* --color-logo-footer: var(--color-white); */
   --color-text: #757575;
   --color-nav-and-title: #212121;
 
@@ -15,29 +15,31 @@
 ul {
   list-style: none;
 }
-a {
-  text-decoration: none;
-}
+
 body {
   background-color: var(--color-bg-primary);
   color: var(--color-text);
+  /* background-color: tomato; */
+}
+.link {
+  text-decoration: none;
 }
 .header {
   background-color: var(--color-white);
 }
-.header-navigation {
+.header-nav .link {
   color: var(--color-nav-and-title);
 }
 
-.logo-header {
+.logo {
   color: var(--color-logo-header);
 }
-
+.header-contacts .link {
+  color: var(--color-text);
+}
 .accent,
-.header-navigation :hover,
-.header-navigation :focus,
-.header-contacts :hover,
-.header-contacts :focus,
+.header :hover,
+.header :focus,
 .address :hover,
 .address :focus {
   color: var(--color-accent);
@@ -45,20 +47,33 @@ body {
 .hero {
   background: var(--color-bg-black);
 }
-.main-team {
+
+.team {
   background-color: var(--color-bg-secondary);
+}
+.team-list > li {
+  background-color: var(--color-white);
+}
+.hero-title {
+  color: var(--color-white);
+}
+.hero-button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  cursor: pointer;
+}
+.section-title,
+.title {
+  color: var(--color-nav-and-title);
 }
 
 .footer {
   background: var(--color-bg-black);
+  color: var(--color-white);
 }
-.logo-footer {
-  color: var(--color-logo-footer);
+.footer .link {
+  color: var(--color-white);
 }
-/* black-заголовки, шапка
-контент-контакты
-FFFFFF white-фон в хедере
-secondary
-primary
-лого в футері білий
-контакти в футері rgba(255, 255, 255, 0.6)  */ ;
+.footer-contacts {
+  color: var(--color-contacts-footer);
+}
