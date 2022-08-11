@@ -19,7 +19,11 @@ ul {
 body {
   background-color: var(--color-bg-primary);
   color: var(--color-text);
-  /* background-color: tomato; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -33,6 +37,10 @@ body {
 
 .logo {
   color: var(--color-logo-header);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 .header-contacts .link {
   color: var(--color-text);
@@ -56,11 +64,22 @@ body {
   color: var(--color-white);
   cursor: pointer;
 }
+
 .section-title,
 .title {
   color: var(--color-nav-and-title);
+  font-weight: 700;
 }
-
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 .footer {
   background: var(--color-bg-black);
   color: var(--color-white);
