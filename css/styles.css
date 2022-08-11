@@ -2,15 +2,18 @@
 :root {
   --color-bg-primary: #f5f5f5;
   --color-bg-secondary: #f5f4fa;
-  --color-bg-black: #2f303a;
-  --color-white: #ffffff;
+  --color-bg-additional: #ffffff;
+  --color-bg-theme-dark: #2f303a;
+
   --color-accent: #2196f3;
+
+  --color-text-theme-dark: #ffffff;
   --color-logo-header: #000000;
-  /* --color-logo-footer: var(--color-white); */
   --color-text: #757575;
   --color-nav-and-title: #212121;
-
   --color-contacts-footer: rgba(255, 255, 255, 0.6);
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Raleway", sans-serif;
 }
 ul {
   list-style: none;
@@ -19,56 +22,98 @@ ul {
 body {
   background-color: var(--color-bg-primary);
   color: var(--color-text);
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+
+  font-family: var(--font-family-primary);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
+  color: inherit;
 }
-.header {
-  background-color: var(--color-white);
+.page {
+  background-color: var(--color-bg-additional);
 }
-.header-nav .link {
+.page-nav .link {
   color: var(--color-nav-and-title);
+}
+.page-nav,
+.contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.page-nav .link.current {
+  color: var(--color-accent);
 }
 
 .logo {
   color: var(--color-logo-header);
-  font-family: "Raleway", sans-serif;
+
+  font-family: var(--font-family-secondary);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
 }
-.header-contacts .link {
-  color: var(--color-text);
-}
 
 .hero {
-  background: var(--color-bg-black);
-}
+  background: var(--color-bg-theme-dark);
+  color: var(--color-text-theme-dark);
 
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.btn-secondary {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-nav-and-title);
+}
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-text-theme-dark);
+}
+.btn-hero {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  /* display: flex; */
+  /* align-items: center; */
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .team {
   background-color: var(--color-bg-secondary);
 }
-.team-list > li {
-  background-color: var(--color-white);
-}
-.hero-title {
-  color: var(--color-white);
-}
-.hero-button {
-  background-color: var(--color-accent);
-  color: var(--color-white);
-  cursor: pointer;
+.team-list > li,
+.portfolio-galery > li {
+  background-color: var(--color-bg-additional);
 }
 
 .section-title,
 .title {
   color: var(--color-nav-and-title);
-  font-weight: 700;
 }
 .section-title {
   font-size: 36px;
@@ -76,26 +121,61 @@ body {
   text-align: center;
 }
 .title {
+  /* як заголовок наслідує коф з браузера десь 16 */
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
 }
-.footer {
-  background: var(--color-bg-black);
-  color: var(--color-white);
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
-.footer .link {
-  color: var(--color-white);
+.team .text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
-.footer-contacts {
+.page-footer {
+  background: var(--color-bg-theme-dark);
+  color: var(--color-text-theme-dark);
+}
+.page-footer .link {
+  color: inherit;
+
+  font-style: normal;
+}
+.page-footer .contact {
   color: var(--color-contacts-footer);
 }
+
+.portfolio-galery {
+  font-size: 16px;
+  line-height: 1.88;
+}
+.portfolio-galery .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.btn.secondary {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-nav-and-title);
+}
+.btn.primary {
+  background-color: var(--color-accent);
+  color: var(--color-text-theme-dark);
+}
+
 .accent,
-.header-nav :hover,
-.header-nav :focus,
-.header-contacts :hover,
-.header-contacts :focus,
-.address :hover,
-.address :focus {
+.page-nav :hover,
+.page-nav :focus,
+.contact:hover,
+.contact:focus {
   color: var(--color-accent);
 }
