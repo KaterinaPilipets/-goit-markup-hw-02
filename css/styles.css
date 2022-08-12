@@ -25,6 +25,7 @@ body {
 
   font-family: var(--font-family-primary);
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
@@ -109,7 +110,7 @@ body {
   text-align: center;
 }
 .title {
-  /* як заголовок наслідує коф з браузера десь 16 */
+  /* як заголовок наслідує шрифт з браузера десь 16 */
   font-size: 14px;
   line-height: 1.14;
 }
