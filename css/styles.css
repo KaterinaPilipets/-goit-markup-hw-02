@@ -91,6 +91,7 @@ body {
   /* display: flex; */
   /* align-items: center; */
 }
+/* сховати логічні заголовки, вдсутні на макеті */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -110,7 +111,6 @@ body {
 .portfolio-galery > li {
   background-color: var(--color-bg-additional);
 }
-
 .section-title,
 .title {
   color: var(--color-nav-and-title);
