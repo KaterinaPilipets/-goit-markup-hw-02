@@ -56,31 +56,17 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-
 .hero {
   background: var(--color-bg-theme-dark);
   color: var(--color-text-theme-dark);
-
+  text-align: center;
+}
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-.btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  cursor: pointer;
-}
-.btn-secondary {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-nav-and-title);
-}
-.btn-primary {
-  background-color: var(--color-accent);
-  color: var(--color-text-theme-dark);
 }
 .btn-hero {
   font-weight: 700;
@@ -88,6 +74,8 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  background-color: var(--color-accent);
+  color: var(--color-text-theme-dark);
   /* display: flex; */
   /* align-items: center; */
 }
@@ -149,6 +137,19 @@ body {
   color: var(--color-contacts-footer);
 }
 
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  background-color: var(--color-bg-secondary);
+  color: var(--color-nav-and-title);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--color-accent);
+  color: var(--color-text-theme-dark);
+}
 .portfolio-galery {
   font-size: 16px;
   line-height: 1.88;
@@ -158,20 +159,6 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.btn {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.btn.secondary {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-nav-and-title);
-}
-.btn.primary {
-  background-color: var(--color-accent);
-  color: var(--color-text-theme-dark);
-}
-
 .accent,
 .page-nav :hover,
 .page-nav :focus,
@@ -179,3 +166,12 @@ body {
 .contact:focus {
   color: var(--color-accent);
 }
+
+/* .btn-secondary {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-nav-and-title);
+}
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-text-theme-dark);
+} */
