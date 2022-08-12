@@ -126,7 +126,7 @@ body {
   text-align: center;
 }
 .page-footer {
-  background: var(--color-bg-theme-dark);
+  background-color: var(--color-bg-theme-dark);
   color: var(--color-text-theme-dark);
 }
 .page-footer .link {
